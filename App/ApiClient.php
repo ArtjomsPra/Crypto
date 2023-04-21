@@ -18,7 +18,7 @@ class ApiClient {
         $response = $this->client->request('GET', $url, [
             'headers' => [
                 'Accepts' => 'application/json',
-                'X-CMC_PRO_API_KEY' => '333febdf-4fef-4216-8a84-cfe9ed412462'
+                'X-CMC_PRO_API_KEY' => '***********'
             ]
         ]);
         $cryptoCurrencyData = json_decode($response->getBody()->getContents(), true)['data'];
