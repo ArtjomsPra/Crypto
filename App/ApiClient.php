@@ -22,6 +22,7 @@ class ApiClient {
             ]
         ]);
         $cryptoCurrencyData = json_decode($response->getBody()->getContents(), true)['data'];
+        //var_dump($cryptoCurrencyData);
         $cryptoCurrencies = [];
         foreach ($cryptoCurrencyData as $currencyData) {
             $cryptoCurrencies[] = new CryptoCurrencyInfo($currencyData);
