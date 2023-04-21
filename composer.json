@@ -1,0 +1,17 @@
+{
+    "name": "artjo/crypto",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ArtjomsPra",
+            "email": "artjoms.pralics@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    }
+}
